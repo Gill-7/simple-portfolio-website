@@ -1,0 +1,21 @@
+.container {
+  max-width: 580px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+.name-heading h1 {
+  /* .name-heading h3 { */
+  margin: 0;
+  display: inline;
+  font-size: 1rem;
+}
+
+.name-heading h1 {
+  font-size: 2rem;
+  font-family: "Jaldi", sans-serif;
+}

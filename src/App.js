@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import classes from "./App.module.css";
+import Navbar from "./components/navbar/Navbar";
+import About from "./components/about/About";
+import Projects from "./components/projects/Projects";
+import DevProjects from "./components/devProjects/DevProjects";
+import Contact from "./components/contact/Contact";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <div className={classes.container}>
+        <div className={classes["name-heading"]}>
+          <h1>Gillpreet Singh</h1>
+          {/* <h3> (Front-End Developer)</h3> */}
+          <Navbar />
+        </div>
+        <div>
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/dev-projects" element={<DevProjects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Navigate to="/about" replace />} />
+          </Routes>
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
