@@ -1,0 +1,94 @@
+.form-container {
+  text-align: center;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+
+.form-container h2 {
+  margin: 0.5rem 0 2.5rem 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-field label {
+  color: rgb(110, 109, 109);
+  margin-bottom: 0.2rem;
+}
+
+.input,
+.msg-input {
+  margin-bottom: 2rem;
+  border: none;
+  border-bottom: 1px solid rgb(166, 166, 166);
+  font-size: 0.9rem;
+  outline: none;
+}
+
+.input {
+  height: 30px;
+}
+
+button {
+  width: 120px;
+  height: 40px;
+  margin: 0 auto;
+  background: none;
+  border: 1px solid rgb(166, 166, 166);
+  font-size: 0.95rem;
+  color: #000;
+  cursor: pointer;
+}
+button:hover {
+  background: rgb(166, 166, 166);
+}
+
+.social-contact {
+  margin-top: 4rem;
+}
+
+.social-contact h2 {
+  margin-bottom: 1rem;
+}
+
+.social-contact a {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: rgb(94, 92, 92);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  color: rgb(95, 94, 94);
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 0.85rem;
+  top: 70%;
+  left: 55%;
+  margin-left: -20px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
