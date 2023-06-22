@@ -1,7 +1,7 @@
 import classes from "./App.module.css";
 import Navbar from "./components/navbar/Navbar";
 import About from "./components/about/About";
-import Projects from "./components/projects/Projects";
+import FinishedProjects from "./components/finishedProjects/FinishedProjects";
 import DevProjects from "./components/devProjects/DevProjects";
 import Contact from "./components/contact/Contact";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -18,7 +18,7 @@ function App() {
         <div>
           <Routes>
             <Route path="/about" element={<About />} />
-            <Route path="/projects" element={<Projects />} />
+            <Route path="/projects" element={<FinishedProjects />} />
             <Route path="/dev-projects" element={<DevProjects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="*" element={<Navigate to="/about" replace />} />
