@@ -36,14 +36,6 @@ export default function ProjectCard({ heading, text, src, href, path }) {
         >
           <img src={src[1]} className={classes["card-img"]} alt={heading} />
         </a>
-        <a
-          href={path}
-          alt="link to website"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={src[2]} className={classes["card-img"]} alt={heading} />
-        </a>
       </div>
     </div>
   );

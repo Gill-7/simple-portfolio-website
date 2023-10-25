@@ -5,9 +5,9 @@ import ProjectCard from "../../card/projectCard/ProjectCard";
 export default function FinishedProjects() {
   return (
     <div className={classes.cards}>
-      <h3 className={classes["cards-heading"]}>Current ly in development</h3>
+      <h3 className={classes["cards-heading"]}>Finished Projects</h3>
       <div className={classes["cards-container"]}>
-        This page is in development
+        This page is in development.
         {/* <ProjectCard
           // src={images.jammming}
           heading="Jammming Spotify Playlist"
