@@ -6,18 +6,13 @@ export default function ProjectCard({ heading, text, src, href, path }) {
     <div className={classes["card"]}>
       <div className={classes["card-details"]}>
         <h3 className={classes["card-heading"]}>{heading}</h3>
-        <p className={classes["card-text"]}>{text}</p>
-        <div className={classes["card-link"]}>
-          <a
-            href={href}
-            alt="github"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={classes["card-btn-link"]}
-          >
-            Look at my code here
+        <p className={classes["card-text"]}>
+          {text}(
+          <a href={href} alt="github" target="_blank" rel="noopener noreferrer">
+            CODE
           </a>
-        </div>
+          )
+        </p>
       </div>
       <div className={classes["card-img-container"]}>
         <a

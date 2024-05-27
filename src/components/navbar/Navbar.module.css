@@ -5,11 +5,11 @@
 }
 
 .nav-link {
-  color: rgb(90, 90, 90);
+  color: rgb(108, 108, 108);
   font-family: "Jaldi", sans-serif;
-  font-size: 1.05rem;
+  font-size: 1rem;
   text-decoration: none;
-  margin: 1rem 0.5rem 1rem 0.5rem;
+  margin: 2rem 0.5rem 1rem 0.5rem;
   font-weight: 500;
   letter-spacing: 1px;
   position: relative;
@@ -54,11 +54,12 @@
   .nav-heading {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
   }
   .nav-link {
     margin: 0.3rem;
+    margin-left: 0rem;
     font-size: 1rem;
   }
   .nav-link::after {

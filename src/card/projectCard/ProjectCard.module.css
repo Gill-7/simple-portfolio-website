@@ -1,9 +1,27 @@
+.card-details {
+  margin-bottom: 0.8rem;
+}
+
 .cards-heading {
   text-align: left;
   font-weight: 800;
   font-size: 1.2rem;
-  margin: 0;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
+  color: transparent;
+  background: linear-gradient(
+    360deg,
+    rgb(55, 221, 91) 20%,
+    rgb(96, 199, 247) 40%,
+    rgb(141, 136, 251) 100%
+  );
+  -webkit-background-clip: text;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.cards-heading span {
+  font-size: 1rem;
 }
 
 .cards-container {
@@ -11,41 +29,42 @@
 }
 
 .card-heading {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 600;
   margin: 0;
-  margin-top: 1.5rem;
-  margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .card-text {
   font-size: 0.95rem;
+  font-family: "Lato", sans-serif;
   line-height: 1.4rem;
   letter-spacing: 0.45px;
   margin: 0;
   color: rgb(76, 76, 76);
 }
-
-.card-link {
-  margin: 0.4rem 0 0.7rem 0;
-}
-
-.card-btn-link {
-  color: #000000;
+.card-text a {
   font-size: 0.95rem;
-  border-bottom: 1px solid grey;
+  font-family: "Lato", sans-serif;
+  color: grey;
   text-decoration: none;
 }
 
-.card-btn-link:hover {
-  color: grey;
+.card-text a:hover {
+  color: rgb(76, 76, 76);
 }
 
 .card-img-container {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .card-img {
-  width: 100%;
+  width: 90%;
   height: 100%;
+  margin: auto;
+  display: block;
   object-fit: cover;
+  margin-bottom: 0.5rem;
 }

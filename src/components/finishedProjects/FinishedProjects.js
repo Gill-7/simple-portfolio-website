@@ -11,7 +11,9 @@ const images = {
 export default function FinishedProjects() {
   return (
     <div className={classes.cards}>
-      <h2 className={classes["cards-heading"]}>Personal Projects</h2>
+      <h2 className={classes["cards-heading"]}>
+        P<span>ersonal Projects</span>
+      </h2>
       <div className={classes["cards-container"]}>
         <ProjectCard
           src={images.faceDetection}

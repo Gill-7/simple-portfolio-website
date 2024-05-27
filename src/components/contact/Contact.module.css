@@ -4,6 +4,18 @@
   padding: 1rem;
 }
 
+h2 {
+  font-family: "Lato", sans-serif;
+  color: transparent;
+  background: linear-gradient(
+    360deg,
+    rgb(55, 221, 91) 20%,
+    rgb(96, 199, 247) 40%,
+    rgb(141, 136, 251) 100%
+  );
+  -webkit-background-clip: text;
+}
+
 .form-container h2 {
   margin: 0.5rem 0 2.5rem 0;
 }
@@ -23,8 +35,9 @@
 }
 
 .form-field label {
-  color: rgb(110, 109, 109);
   margin-bottom: 0.2rem;
+  font-family: "Lato", sans-serif;
+  font-size: 0.95rem;
 }
 
 .input,
@@ -32,8 +45,9 @@
   margin-bottom: 2rem;
   border: none;
   border-bottom: 1px solid rgb(166, 166, 166);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   outline: none;
+  font-family: "Lato", sans-serif;
 }
 
 .input {
@@ -45,13 +59,26 @@ button {
   height: 40px;
   margin: 0 auto;
   background: none;
-  border: 1px solid rgb(166, 166, 166);
+  border: 0.7px solid transparent;
+  border-image: linear-gradient(
+    360deg,
+    rgb(22, 170, 54) 20%,
+    rgb(66, 179, 231) 40%,
+    rgb(108, 102, 236) 100%
+  );
+  border-image-slice: 1;
   font-size: 0.95rem;
+  border-image-outset: 3px;
   color: #000;
   cursor: pointer;
 }
 button:hover {
-  background: rgb(166, 166, 166);
+  background-image: linear-gradient(
+    360deg,
+    rgb(130, 244, 155) 20%,
+    rgb(140, 217, 253) 40%,
+    rgb(161, 157, 240) 100%
+  );
 }
 
 .social-contact {
@@ -79,7 +106,7 @@ button:hover {
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   top: 70%;
   left: 55%;
   margin-left: -20px;

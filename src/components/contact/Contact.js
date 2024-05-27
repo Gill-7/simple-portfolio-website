@@ -14,16 +14,15 @@ function Contact() {
     setStatus("Submitting...");
 
     try {
-      const response = await emailjs.sendForm(
+      await emailjs.sendForm(
         "service_z6xgoyq",
         "template_mdj52tt",
         form.current,
         "Aklu7pbJF-X0jIsil"
       );
-      const json = response.text;
+      // const json = response.text;
       setStatus("Submit");
       setShowMessage(true);
-      console.log(json);
     } catch (error) {
       if (error.status === 400) {
         setShowMessage(true);
@@ -38,7 +37,7 @@ function Contact() {
           <h2>Get in touch</h2>
           <form className={classes["form"]} ref={form} onSubmit={handleSubmit}>
             <div className={classes["form-field"]}>
-              <label htmlFor="name">Full Name</label>
+              <label htmlFor="name">Name</label>
               <input
                 type="text"
                 id="name"
@@ -58,7 +57,7 @@ function Contact() {
               />
             </div>
             <div className={classes["form-field"]}>
-              <label htmlFor="message">Your message here:</label>
+              <label htmlFor="message">Message:</label>
               <textarea
                 id="message"
                 name="message"
@@ -82,6 +81,7 @@ function Contact() {
             target="_blank"
             rel="noreferrer"
             className={classes.tooltip}
+            aria-label="LinkedIn"
           >
             <GrLinkedinOption />
             <span className={classes.tooltiptext}>Linkedin</span>
@@ -91,6 +91,7 @@ function Contact() {
             target="_blank"
             rel="noreferrer"
             className={classes.tooltip}
+            aria-label="Github"
           >
             <AiOutlineGithub />
             <span className={classes.tooltiptext}>Github</span>
@@ -98,6 +99,7 @@ function Contact() {
           <a
             href="mailto:gillpreetsingh28@gmail.com"
             className={classes.tooltip}
+            aria-label="Email"
           >
             <AiOutlineMail />
             <span className={classes.tooltiptext}>Email</span>

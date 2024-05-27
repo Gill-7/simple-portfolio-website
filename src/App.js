@@ -11,7 +11,9 @@ function App() {
     <BrowserRouter>
       <div className={classes.container}>
         <div className={classes["name-heading"]}>
-          <h1>Gillpreet Singh</h1>
+          <h1>
+            G<span>illpreet </span>S<span>ingh</span>
+          </h1>
           {/* <h3> (Front-End Developer)</h3> */}
           <Navbar />
         </div>

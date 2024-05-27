@@ -4,85 +4,117 @@ import classes from "./About.module.css";
 export default function About() {
   return (
     <div className={classes.about}>
-      <h3 className={classes["about--heading"]}>About Me</h3>
+      <h3 className={classes["about--heading"]}>
+        A<span>bout Me</span>
+      </h3>
       <div className={classes["about--text"]}>
         Dedicated and self-motivated self-taught full-stack developer with a
         passion for creating innovative and user-centric web applications. I am
         passionate about creating exceptional user experiences, optimizing web
-        functionality, amnd continually expanding my knowledge in front-end and
+        functionality, and continually expanding my knowledge in front-end and
         back-end technologies.My objective is to collaborate with dynamic teams,
         tackle complex challenges, and drive the success of web applications
         through my diverse technical expertise and self-driven commitment to
         excellence.
       </div>
       <div className={classes["skill"]}>
-        <h3>Skills</h3>
-        <div className={classes["skills-container"]}>
-          <div>
-            <p>JavaScript</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.javascript}`}>
-                90%
-              </div>
+        <h3 className={classes["skills--heading"]}>
+          S<span>kills</span>
+        </h3>
+        <section className={classes["design-section"]}>
+          <div className={classes["timeline"]}>
+            <div className={classes["timeline-empty"]}></div>
+
+            <div className={classes["timeline-middle"]}>
+              <div className={classes["timeline-circle"]}></div>
+            </div>
+            <div
+              className={`${classes["timeline-component"]} ${classes["timeline-content"]}`}
+            >
+              <h3>Python (learning)</h3>
+            </div>
+            <div
+              className={`${classes["timeline-component"]} ${classes["timeline-content"]}`}
+            >
+              <h3>PostgreSQL</h3>
+            </div>
+            <div className={classes["timeline-middle"]}>
+              <div className={classes["timeline-circle"]}></div>
+            </div>
+            <div className={classes["timeline-empty"]}></div>
+
+            <div className={classes["timeline-empty"]}></div>
+
+            <div className={classes["timeline-middle"]}>
+              <div className={classes["timeline-circle"]}></div>
+            </div>
+            <div
+              className={`${classes["timeline-component"]} ${classes["timeline-content"]}`}
+            >
+              <h3>Express</h3>
+            </div>
+
+            <div
+              className={`${classes["timeline-component"]} ${classes["timeline-content"]}`}
+            >
+              <h3>Nodejs</h3>
+            </div>
+
+            <div className={classes["timeline-middle"]}>
+              <div className={classes["timeline-circle"]}></div>
+            </div>
+
+            <div className={classes["timeline-empty"]}></div>
+            <div className={classes["timeline-empty"]}></div>
+            <div className={classes["timeline-middle"]}>
+              <div className={classes["timeline-circle"]}></div>
+            </div>
+
+            <div
+              className={`${classes["timeline-component"]} ${classes["timeline-content"]}`}
+            >
+              <h3>Typescript</h3>
+            </div>
+            <div
+              className={`${classes["timeline-component"]} ${classes["timeline-content"]}`}
+            >
+              <h3>React</h3>
+            </div>
+            <div className={classes["timeline-middle"]}>
+              <div className={classes["timeline-circle"]}></div>
+            </div>
+            <div className={classes["timeline-empty"]}></div>
+
+            <div className={classes["timeline-empty"]}></div>
+            <div className={classes["timeline-middle"]}>
+              <div className={classes["timeline-circle"]}></div>
+            </div>
+            <div
+              className={`${classes["timeline-component"]} ${classes["timeline-content"]}`}
+            >
+              <h3>Javascript</h3>
+            </div>
+            <div
+              className={`${classes["timeline-component"]} ${classes["timeline-content"]}`}
+            >
+              <h3>CSS</h3>
+            </div>
+            <div className={classes["timeline-middle"]}>
+              <div className={classes["timeline-circle"]}></div>
+            </div>
+            <div className={classes["timeline-empty"]}></div>
+
+            <div className={classes["timeline-empty"]}></div>
+            <div className={classes["timeline-middle"]}>
+              <div className={classes["timeline-circle"]}></div>
+            </div>
+            <div
+              className={`${classes["timeline-component"]} ${classes["timeline-content"]}`}
+            >
+              <h3>Html</h3>
             </div>
           </div>
-          <div>
-            <p>React</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.react}`}>90%</div>
-            </div>
-          </div>
-          <div>
-            <p>NodeJS</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.nodejs}`}>90%</div>
-            </div>
-          </div>
-          <div>
-            <p>Express</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.express}`}>90%</div>
-            </div>
-          </div>
-          <div>
-            <p>PostgreSQL</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.psql}`}>80%</div>
-            </div>
-          </div>
-          <div>
-            <p>SQL</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.sql}`}>80%</div>
-            </div>
-          </div>
-          <div>
-            <p>Typescript</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.typescript}`}>
-                70%
-              </div>
-            </div>
-          </div>
-          <div>
-            <p>Redux</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.redux}`}>70%</div>
-            </div>
-          </div>
-          <div>
-            <p>HTML</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.html}`}>90%</div>
-            </div>
-          </div>
-          <div>
-            <p>CSS</p>
-            <div className={classes["skills-section"]}>
-              <div className={`${classes.skills} ${classes.css}`}>90%</div>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
   );
