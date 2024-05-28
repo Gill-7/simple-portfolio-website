@@ -4,9 +4,9 @@ import classes from "./About.module.css";
 export default function About() {
   return (
     <div className={classes.about}>
-      <h3 className={classes["about--heading"]}>
+      <h2 className={classes["about--heading"]}>
         A<span>bout Me</span>
-      </h3>
+      </h2>
       <div className={classes["about--text"]}>
         Dedicated and self-motivated self-taught full-stack developer with a
         passion for creating innovative and user-centric web applications. I am
@@ -18,9 +18,9 @@ export default function About() {
         excellence.
       </div>
       <div className={classes["skill"]}>
-        <h3 className={classes["skills--heading"]}>
+        <h2 className={classes["skills--heading"]}>
           S<span>kills</span>
-        </h3>
+        </h2>
         <section className={classes["design-section"]}>
           <div className={classes["timeline"]}>
             <div className={classes["timeline-empty"]}></div>
