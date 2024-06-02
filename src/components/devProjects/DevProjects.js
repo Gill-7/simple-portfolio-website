@@ -5,10 +5,12 @@ export default function DevProjects() {
   return (
     <div className={classes.cards}>
       <h3 className={classes["cards-heading"]}>
-        C<span Projects>urrent Projects</span>
+        C<span>urrent Projects</span>
       </h3>
       <div className={classes["cards-container"]}>
-        Readers (Working Project title)
+        <div className={classes["card-heading"]}>
+          Readers (Working Project title)
+        </div>
         <ol>
           <li>Easy to search and browse through books</li>
           <li>Manage your online personal library</li>

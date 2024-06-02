@@ -20,7 +20,6 @@ function Contact() {
         form.current,
         "Aklu7pbJF-X0jIsil"
       );
-      // const json = response.text;
       setStatus("Submit");
       setShowMessage(true);
     } catch (error) {

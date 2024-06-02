@@ -8,14 +8,11 @@ export default function About() {
         A<span>bout Me</span>
       </h2>
       <div className={classes["about--text"]}>
-        Dedicated and self-motivated self-taught full-stack developer with a
-        passion for creating innovative and user-centric web applications. I am
-        passionate about creating exceptional user experiences, optimizing web
-        functionality, and continually expanding my knowledge in front-end and
-        back-end technologies.My objective is to collaborate with dynamic teams,
-        tackle complex challenges, and drive the success of web applications
-        through my diverse technical expertise and self-driven commitment to
-        excellence.
+        Self-taught and highly motivated full stack developer with experience in
+        building and maintaining web applications. Proficient in both frontend
+        and backend technologies including JavaScript, React, Node.js, Express,
+        and SQL. Passionate about coding, problem-solving, and continuous
+        learning.
       </div>
       <div className={classes["skill"]}>
         <h2 className={classes["skills--heading"]}>

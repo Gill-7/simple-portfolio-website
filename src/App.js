@@ -14,7 +14,6 @@ function App() {
           <h1>
             G<span>illpreet </span>S<span>ingh</span>
           </h1>
-          {/* <h3> (Front-End Developer)</h3> */}
           <Navbar />
         </div>
         <div>

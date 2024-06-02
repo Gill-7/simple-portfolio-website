@@ -15,9 +15,12 @@
     rgb(141, 136, 251) 100%
   );
   -webkit-background-clip: text;
-  font-family: "Lato", sans-serif;
   letter-spacing: 0.3px;
   text-transform: uppercase;
+}
+
+li {
+  font-family: "Lato", sans-serif;
 }
 
 .cards-heading span {
@@ -36,17 +39,16 @@
   margin-bottom: 0.4rem;
 }
 
-.card-text {
+.card-text,
+li {
   font-size: 0.95rem;
-  font-family: "Lato", sans-serif;
-  line-height: 1.4rem;
+  line-height: 1.6rem;
   letter-spacing: 0.45px;
   margin: 0;
   color: rgb(76, 76, 76);
 }
 .card-text a {
   font-size: 0.95rem;
-  font-family: "Lato", sans-serif;
   color: grey;
   text-decoration: none;
 }
