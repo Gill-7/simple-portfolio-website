@@ -20,7 +20,7 @@ export default function FinishedProjects() {
           heading="Face Detection"
           text="This app utilizes machine learning and algorithms to detect and outline faces with in uploaded images. Users can create accounts or log in to access the face detection service securely. Application also offers a feature to count the total images submitted and store the data in the database."
           href="https://github.com/Gill-7/smart-brain-frontend"
-          path="https://facedetectionbrain.onrender.com/"
+          path="https://face-detection-7ziu.onrender.com/"
         />
         <ProjectCard
           src={images.weather}
