@@ -4,7 +4,7 @@ import ProjectCard from "../../card/projectCard/ProjectCard";
 
 const images = {
   apod: ["images/apod1.png", "images/apod2.png"],
-  weather: ["images/weather1.png", "images/weather1a.png"],
+  weather: ["images/weather1a.png", "images/weather1.png"],
   faceDetection: ["images/facedetect1.png", "images/facedetect2.png"],
 };
 
@@ -25,7 +25,7 @@ export default function FinishedProjects() {
         <ProjectCard
           src={images.weather}
           heading="Ever Weather"
-          text="This app displays real-time data, including temperature, humidity, wind speed and weather conditions, and allows users to check current weather conditions for a specific location."
+          text="Ever Weather is a modern web application designed to provide users with real-time weather information and an interactive map experience. Developed using Javascript, HTML, CSS and powered by the Express framework, the app seemlessly integrates the OpenWeather API for accurate weather data and the Google Maps API for a dynamic, interactive map. "
           href="https://github.com/Gill-7/weather-application"
           path="https://everweather.netlify.app/"
         />
