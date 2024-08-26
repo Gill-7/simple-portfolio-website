@@ -1,8 +1,25 @@
+:root {
+  --mercury-color: gray;
+  --venus-color: orange;
+  --earth-color: blue;
+  --mars-color: red;
+  --jupiter-color: rgb(47, 255, 116);
+  --saturn-color: rgb(139, 0, 199);
+  --uranus-color: rgb(3, 244, 236);
+  --neptune-color: rgb(165, 168, 255);
+  --gray: rgb(173, 173, 173);
+}
+
 .container {
   max-width: 700px;
   margin: 2rem auto;
   padding: 0 1rem;
+  z-index: 5;
 }
+
+/* .container * {
+  background: #fff;
+} */
 
 @media screen and (max-width: 530px) {
   .container {
@@ -39,4 +56,152 @@ h1 {
   font-size: 1.9rem;
   font-weight: 700;
   text-transform: lowercase;
+}
+
+.solar-system {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sun {
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-100%, -100%);
+  background-color: rgba(239, 239, 161, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(247, 247, 197, 0.8);
+}
+
+.orbit {
+  position: absolute;
+  top: 97%;
+  left: 98%;
+  border-radius: 50%;
+}
+
+@media only screen and (max-width: 831px) {
+  .orbit {
+    position: absolute;
+    top: 97%;
+    left: 96%;
+    border-radius: 50%;
+  }
+}
+
+.orbit-mercury,
+.orbit-venus,
+.orbit-earth,
+.orbit-mars,
+.orbit-jupiter,
+.orbit-saturn,
+.orbit-uranus,
+.orbit-neptune {
+  background: none;
+}
+
+.orbit-mercury {
+  width: 150px;
+  height: 150px;
+  animation: rotate 9s infinite linear;
+  border: 0.2px solid var(--gray);
+}
+.orbit-venus {
+  width: 250px;
+  height: 250px;
+  animation: rotate 14s infinite linear;
+  border: 0.2px solid var(--gray);
+}
+.orbit-earth {
+  width: 350px;
+  height: 350px;
+  animation: rotate 20s infinite linear;
+  border: 0.2px solid var(--gray);
+}
+.orbit-mars {
+  width: 650px;
+  height: 650px;
+  animation: rotate 28s infinite linear;
+  border: 0.2px solid var(--gray);
+}
+.orbit-jupiter {
+  width: 1000px;
+  height: 1000px;
+  animation: rotate 40s infinite linear;
+  border: 0.2px solid var(--gray);
+}
+.orbit-saturn {
+  width: 1300px;
+  height: 1300px;
+  animation: rotate 56s infinite linear;
+  border: 0.2px solid var(--gray);
+}
+.orbit-uranus {
+  width: 1650px;
+  height: 1650px;
+  animation: rotate 72s infinite linear;
+  border: 0.2px solid var(--gray);
+}
+.orbit-neptune {
+  width: 2050px;
+  height: 2050px;
+  animation: rotate 95s infinite linear;
+  border: 0.2px solid var(--gray);
+}
+
+.mercury,
+.venus,
+.earth,
+.mars,
+.jupiter,
+.saturn,
+.uranus,
+.neptune {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+.mercury {
+  border: 1px solid var(--mercury-color);
+}
+.venus {
+  border: 1px solid var(--venus-color);
+}
+.earth {
+  border: 1px solid var(--earth-color);
+}
+.mars {
+  border: 1px solid var(--mars-color);
+}
+.jupiter {
+  border: 1px solid var(--jupiter-color);
+}
+.saturn {
+  border: 1px solid var(--saturn-color);
+}
+.uranus {
+  border: 1px solid var(--uranus-color);
+}
+.neptune {
+  border: 1px solid var(--neptune-color);
 }

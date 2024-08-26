@@ -8,17 +8,99 @@ export default function About() {
         A<span>bout Me</span>
       </h2>
       <div className={classes["about--text"]}>
-        Self-taught and highly motivated full stack developer with experience in
-        building and maintaining web applications. Proficient in both frontend
-        and backend technologies including JavaScript, React, Node.js, Express,
-        and SQL. Passionate about coding, problem-solving, and continuous
-        learning.
+        Full-stack developer with experience in creating and maintaining web
+        applications. Passionate about coding, problem-solving, and learning new
+        things. Always looking to improve skills and stay updated with the
+        latest trends. Dedicated to growing, innovating, and working on
+        meaningful projects.
       </div>
       <div className={classes["skill"]}>
         <h2 className={classes["skills--heading"]}>
           S<span>kills</span>
         </h2>
-        <section className={classes["design-section"]}>
+        <section className={classes["section"]}>
+          <div className={classes.front}>
+            <h3 className={classes["main-heading"]}>Front-End Development</h3>
+            <div>
+              <ul>
+                <h4 className={classes.heading}>Languages & Frameworks</h4>
+                <ul className={classes.list}>
+                  <li>JavaScript</li>
+                  <li>TypeScript</li>
+                  <li>React</li>
+                  <li>Redux</li>
+                  <li>Next.JS</li>
+                  <li>Tailwind CSS</li>
+                  <li>HTML5, CSS3</li>
+                </ul>
+              </ul>
+              <ul>
+                <h4 className={classes.heading}>Tools & Libraries</h4>
+                <ul className={classes.list}>
+                  <li>NPM/Yarn, Axios</li>
+                  <li>Webpack, Babel</li>
+                  <li>CSS Flexbox, Grid</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div className={classes.back}>
+            <h3 className={classes["main-heading"]}>Back-End Development</h3>
+            <div>
+              <ul>
+                <h4 className={classes.heading}>Languages & Frameworks</h4>
+                <ul className={classes.list}>
+                  <li>Node.js</li>
+                  <li>Express.js</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                </ul>
+              </ul>
+              <ul>
+                <h4 className={classes.heading}>Databases</h4>
+                <ul className={classes.list}>
+                  <li>SQL (PostgreSQL, MySQL)</li>
+                  <li>Redis, MongoDB</li>
+                </ul>
+              </ul>
+              <ul>
+                <h4 className={classes.heading}>API & Web Services</h4>
+                <ul className={classes.list}>
+                  <li>RESTful APIs, GraphQL</li>
+                  <li>Auth (JWT, OAuth)</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+          <div className={classes.deploy}>
+            <h3 className={classes["main-heading"]}>
+              Deployment & Maintenance
+            </h3>
+            <div>
+              <ul>
+                <h4 className={classes.heading}>Version Control</h4>
+                <ul className={classes.list}>
+                  <li>Git, Github</li>
+                </ul>
+              </ul>
+              <ul>
+                <h4 className={classes.heading}>Cloud & Hosting</h4>
+                <ul className={classes.list}>
+                  <li>AWS, Docker</li>
+                  <li>Vercel, Heroku</li>
+                </ul>
+              </ul>
+              <ul>
+                <h4 className={classes.heading}>CI/CD</h4>
+                <ul className={classes.list}>
+                  <li>GitHub Actions</li>
+                  <li>Travis CI</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </section>
+        {/* <section className={classes["design-section"]}>
           <div className={classes["timeline"]}>
             <div className={classes["timeline-empty"]}></div>
 
@@ -111,7 +193,7 @@ export default function About() {
               <h3>Html</h3>
             </div>
           </div>
-        </section>
+        </section> */}
       </div>
     </div>
   );

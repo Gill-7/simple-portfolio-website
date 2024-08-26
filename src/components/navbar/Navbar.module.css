@@ -5,12 +5,12 @@
 }
 
 .nav-link {
-  color: rgb(108, 108, 108);
+  color: rgb(81, 81, 81);
   font-family: "Jaldi", sans-serif;
   font-size: 1rem;
   text-decoration: none;
   margin: 2rem 0.5rem 1rem 0.5rem;
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: 1px;
   position: relative;
   display: block;
@@ -26,7 +26,7 @@
   left: 0;
   width: 100%;
   height: 1.1px;
-  background: rgb(90, 90, 90);
+  background: rgb(180, 180, 180);
   transform: scaleX(0);
   transform-origin: right;
   transition: transform 0.4s;
@@ -60,9 +60,12 @@
   .nav-link {
     margin: 0.3rem;
     margin-left: 0rem;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
   .nav-link::after {
     background: #fff;
+  }
+  .active {
+    text-decoration: underline;
   }
 }

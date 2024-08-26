@@ -26,6 +26,7 @@ h2 {
   max-width: 350px;
   margin: 0 auto;
   text-align: center;
+  background: #fff;
 }
 
 .form-field {
@@ -53,7 +54,7 @@ h2 {
   height: 30px;
 }
 
-button {
+.form-btn {
   width: 120px;
   height: 40px;
   margin: 0 auto;
@@ -67,11 +68,11 @@ button {
   );
   border-image-slice: 1;
   font-size: 0.95rem;
-  border-image-outset: 3px;
+  border-image-outset: 1px;
   color: #000;
   cursor: pointer;
 }
-button:hover {
+.form-btn:hover {
   background-image: linear-gradient(
     360deg,
     rgb(130, 244, 155) 20%,

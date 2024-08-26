@@ -65,7 +65,9 @@ function Contact() {
                 required
               />
             </div>
-            <button type="submit">{status}</button>
+            <button className={classes["form-btn"]} type="submit">
+              {status}
+            </button>
           </form>
         </div>
       )}

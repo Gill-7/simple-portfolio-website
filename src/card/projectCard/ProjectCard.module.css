@@ -4,7 +4,7 @@
 
 .cards-heading {
   text-align: left;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 1.2rem;
   margin-top: 1.2rem;
   color: transparent;
@@ -24,7 +24,8 @@ li {
 }
 
 .cards-heading span {
-  font-size: 1rem;
+  font-size: 1.05rem;
+  letter-spacing: 0.45px;
 }
 
 .cards-container {
@@ -32,20 +33,24 @@ li {
 }
 
 .card-heading {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.25px;
   font-weight: 600;
   margin: 0;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   margin-bottom: 0.4rem;
 }
 
 .card-text,
 li {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   line-height: 1.6rem;
+  font-weight: 400;
   letter-spacing: 0.45px;
   margin: 0;
-  color: rgb(76, 76, 76);
+  color: rgb(57, 57, 57);
+  background: #fff;
+  z-index: 6;
 }
 .card-text a {
   font-size: 0.95rem;
@@ -54,21 +59,34 @@ li {
 }
 
 .card-text a:hover {
-  color: rgb(76, 76, 76);
+  color: rgb(57, 57, 57);
 }
 
 .card-img-container {
   width: 100%;
   margin-bottom: 2rem;
 }
+.cards-container > ol {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 
-.card-img {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-  display: block;
-  object-fit: cover;
-  margin-bottom: 1rem;
-  border: 1px solid rgb(231, 231, 231);
-  border-radius: 10px;
+@media only screen and (max-width: 530px) {
+  .cards-heading {
+    margin-bottom: 0.6rem;
+    margin-top: 1.6rem;
+  }
+  .cards-container {
+    margin: 0;
+  }
+
+  .card-heading {
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .card-text {
+    font-size: 0.95rem;
+    margin: 0.3rem 0 0.6rem 0;
+  }
 }

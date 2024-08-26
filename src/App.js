@@ -9,6 +9,36 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
+      {/* <div className={classes["space"]}> */}
+      <div className={classes["solar-system"]}>
+        <div className={classes["sun"]}></div>
+        <div className={`${classes["orbit"]} ${classes["orbit-mercury"]}`}>
+          <div className={`${classes["planet"]} ${classes["mercury"]}`}></div>
+          <div className={classes["planet-name"]}></div>
+        </div>
+        <div className={`${classes["orbit"]} ${classes["orbit-venus"]}`}>
+          <div className={`${classes["planet"]} ${classes["venus"]}`}></div>
+        </div>
+        <div className={`${classes["orbit"]} ${classes["orbit-earth"]}`}>
+          <div className={`${classes["planet"]} ${classes["earth"]}`}></div>
+        </div>
+        <div className={`${classes["orbit"]} ${classes["orbit-mars"]}`}>
+          <div className={`${classes["planet"]} ${classes["mars"]}`}></div>
+        </div>
+        <div className={`${classes["orbit"]} ${classes["orbit-jupiter"]}`}>
+          <div className={`${classes["planet"]} ${classes["jupiter"]}`}></div>
+        </div>
+        <div className={`${classes["orbit"]} ${classes["orbit-saturn"]}`}>
+          <div className={`${classes["planet"]} ${classes["saturn"]}`}></div>
+        </div>
+        <div className={`${classes["orbit"]} ${classes["orbit-uranus"]}`}>
+          <div className={`${classes["planet"]} ${classes["uranus"]}`}></div>
+        </div>
+        <div className={`${classes["orbit"]} ${classes["orbit-neptune"]}`}>
+          <div className={`${classes["planet"]} ${classes["neptune"]}`}></div>
+        </div>
+      </div>
+      {/* </div> */}
       <div className={classes.container}>
         <div className={classes["name-heading"]}>
           <h1>
