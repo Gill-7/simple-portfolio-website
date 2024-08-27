@@ -28,13 +28,13 @@ export default function FinishedProjects() {
           heading="FaceFinder"
           text="FaceFinder is an advanced face detection app powered by AI, designed to precisely identify faces in images. It incorporates secure JWT-based authentication to safeguard user data and sessions. Additionally, users can personalize their experience by updating their profiles, ensuring both security and ease of use."
           href="https://github.com/Gill-7/smart-brain-frontend"
-          path="https://face-detection-7ziu.onrender.com/"
+          path="https://facefinder.vercel.app/"
         />
         <ProjectCard
           src={images.weather}
           heading="Ever Weather"
           text="Ever Weather is a modern web application designed to provide users with real-time weather information and an interactive map experience. The integration of the Google Maps API allows users to easily search for and explore weather conditions on a dynamic, interactive map."
-          href="https://github.com/Gill-7/weather-application"
+          href="https://github.com/Gill-7/ever-weather"
           path="https://everweather.netlify.app/"
         />
         <ProjectCard
